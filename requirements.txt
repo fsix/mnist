@@ -2,3 +2,4 @@ python-mnist
 numpy
 scipy
 scikit-learn
+docopt
