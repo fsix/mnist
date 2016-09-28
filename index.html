@@ -1,49 +1,75 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>MNIST by fsix</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">MNIST</h1>
-      <h2 class="project-tagline">Tips and Tricks for Cracking ML&#39;s Favorite Image Dataset</h2>
-      <a href="https://github.com/fsix/mnist" class="btn">View on GitHub</a>
-      <a href="https://github.com/fsix/mnist/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/fsix/mnist/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">MNIST</h1>
+        <p class="header">Tips and Tricks for Cracking ML&#39;s Favorite Image Dataset</p>
 
-    <section class="main-content">
-      <h1>
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/fsix/mnist/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/fsix/mnist/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/fsix/mnist">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/fsix">fsix</a></p>
+
+
+      </header>
+      <section>
+        <h1>
 <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h1>
 
-<p>MNIST is the "gateway drug" of ML for Computer Vision. A dataset of handwritten digits published in the 1990s, MNIST is perhaps one of the most iconic exercises for beginning Machine Learning, and a milestone in using computers to structurally analyse images. Perhaps, in some day and age, you implemented regression or neural networks on this dataset. This guide will serve as an exploration of the MNIST dataset, beginning with simple methods and eventually reaching methods that will reach 99% accuracy.</p>
+<p>MNIST is a dataset of handwritten digits published in the 1990s, MNIST is perhaps one of the most iconic exercises for beginning Machine Learning, and a milestone in using computers to structurally analyse images. This guide will serve as an exploration of the MNIST dataset, beginning with simple methods and eventually reaching methods that will reach 99% accuracy.</p>
 
 <h2>
 <a id="preprocessing-techniques" class="anchor" href="#preprocessing-techniques" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Preprocessing Techniques</h2>
 
+<h3>
+<a id="deskewing" class="anchor" href="#deskewing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Deskewing</h3>
+
 <h2>
 <a id="optimizing-hyperparameters" class="anchor" href="#optimizing-hyperparameters" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Optimizing Hyperparameters</h2>
+
+<h3>
+<a id="linegrid-search" class="anchor" href="#linegrid-search" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Line/Grid Search</h3>
+
+<h3>
+<a id="bayesian-optimization" class="anchor" href="#bayesian-optimization" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bayesian Optimization</h3>
 
 <h2>
 <a id="adverserial-training" class="anchor" href="#adverserial-training" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Adverserial Training</h2>
 
+<h3>
+<a id="perturbation" class="anchor" href="#perturbation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Perturbation</h3>
+
+<h3>
+<a id="elastic-deformations" class="anchor" href="#elastic-deformations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Elastic Deformations</h3>
+
 <h2>
 <a id="guiding-approximations" class="anchor" href="#guiding-approximations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Guiding Approximations</h2>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/fsix/mnist">MNIST</a> is maintained by <a href="https://github.com/fsix">fsix</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+<h3>
+<a id="momentum-and-annealing-for-sgd" class="anchor" href="#momentum-and-annealing-for-sgd" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Momentum and Annealing for SGD</h3>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
-
-    </section>
-
-  
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
   </body>
 </html>
