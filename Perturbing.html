@@ -5289,8 +5289,10 @@ v3zZucUoI/1aoGHqPPArlDx2EZQxwsdRNKxeR1mcHJo8ps5/AkVjtw44DxxBiWqoBWomj3suKWNK
 Test Accuracy: 23.62%</p>
 <h3 id="Train-with-Perturbations">Train with Perturbations<a class="anchor-link" href="#Train-with-Perturbations">&#182;</a></h3><p>Train Accuracy: 82.15%<br>
 Test Accuracy: 67.45%</p>
-<h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h2><p>We see that training with perturbations doubled our test accuracy, when testing against noisier datasets. In iother words, the second classifier is far more generalized than the first.</p>
-<p>This demonstration is flawed, as we train for the very transformations that we test against. However, this demonstrates that even training on singleton transformations is enough to make a classifier more robust, against combinations of transformations. Thus, we can apply this more broadly by identifying only a few transformations.</p>
+<p>We additionally found that deskewing would overfit the training data with an average training accuracy of 99.6% and test accuracy of 98.6%, with a 1% deficit.</p>
+<p>On the other, training with perturbations on top of deskewing would result in an average training accuracy of 99.2% and test accuracy of 98.7%, leaving an average of 0.5% deficit.</p>
+<h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h2><p>We see that training with perturbations doubled our test accuracy, when testing against noisier datasets. In other words, the second classifier is far more generalized than the first.</p>
+<p>This demonstration is flawed, as we train for the very transformations that we test against. However, this demonstrates that even training on singleton transformations is enough to make a classifier more robust, against combinations of transformations. Thus, we can apply this more broadly by identifying only a few transformations to represent a vast majority of noise.</p>
 
 </div>
 </div>
